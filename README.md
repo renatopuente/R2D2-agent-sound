@@ -9,6 +9,15 @@ Reproduce un sonido personalizado (`Fahhh.mp3`) en Claude Code cuando:
 - Windows 10/11
 - Claude Code
 - PowerShell (incluido en Windows)
+- Node.js (para instalación vía npm)
+
+## Instalación rápida (recomendada)
+
+```bash
+npx @renatopuente/fahhh-agent-sound
+```
+
+Esto descarga e instala el paquete automáticamente sin necesidad de clonar el repositorio.
 
 ## El instalador:
 1. Copia `Fahhh.mp3` a `~/sounds/`
@@ -24,9 +33,9 @@ Reinicia Claude Code después de instalarlo.
 1. Clona o descarga este repositorio.
 2. Copia `Fahhh.mp3` a una carpeta de tu preferencia (ej. `C:\sounds\`).
 3. Abre el archivo de configuración global de Claude Code:
-   ```
-   C:\Users\<TuUsuario>\.claude\settings.json
-   ```
+```
+C:\Users\<TuUsuario>\.claude\settings.json
+```
 4. Agrega los siguientes hooks dentro de la clave `"hooks"` (ajusta la ruta del MP3):
 
 ```json
@@ -62,13 +71,13 @@ Reinicia Claude Code después de instalarlo.
 
 ## Personalización
 
-- **Volumen**: Cambia `$mp.Volume = 1.0` a cualquier valor entre `0.0` y `1.0`.
-- **Sonido**: Reemplaza `Fahhh.mp3` con cualquier archivo MP3 que quieras usar.
-- **Disparador**: Elimina el bloque `PermissionRequest` o `Stop` si solo quieres uno de los dos.
+- **Volumen:** Cambia `$mp.Volume = 1.0` a cualquier valor entre 0.0 y 1.0.
+- **Sonido:** Reemplaza `Fahhh.mp3` con cualquier archivo MP3 que quieras usar.
+- **Disparador:** Elimina el bloque `PermissionRequest` o `Stop` si solo quieres uno de los dos.
 
 ## Cómo funciona
 
-Claude Code soporta [hooks](https://docs.anthropic.com/en/docs/claude-code/hooks) — comandos de shell que se ejecutan en eventos específicos del ciclo de vida. Este hook utiliza `System.Windows.Media.MediaPlayer` de PowerShell para reproducir un MP3 sin dependencias externas.
+Claude Code soporta hooks — comandos de shell que se ejecutan en eventos específicos del ciclo de vida. Este hook utiliza `System.Windows.Media.MediaPlayer` de PowerShell para reproducir un MP3 sin dependencias externas.
 
 ---
 
