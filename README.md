@@ -10,7 +10,7 @@ Reproduce un sonido personalizado (`Fahhh.mp3`) en Claude Code cuando:
 - Claude Code
 - PowerShell (incluido en Windows)
 
-El instalador:
+## El instalador:
 1. Copia `Fahhh.mp3` a `~/sounds/`
 2. Agrega los hooks automáticamente a `~/.claude/settings.json`
 3. Muestra la ruta del MP3 y los eventos configurados
