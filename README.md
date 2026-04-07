@@ -79,4 +79,4 @@ Claude Code soporta [hooks](https://docs.anthropic.com/en/docs/claude-code/hooks
 
 ---
 
-Hecho con Claude Code por [@renatopuente](https://github.com/renatopuente)
+Hecho por [@renatopuente](https://github.com/renatopuente)
