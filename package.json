@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Reproduce un sonido personalizado en Claude Code cuando solicita permiso o termina de responder",
   "bin": {
-    "fahhh-agent-sound": "bin/install.js"
+    "fahhh-agent-sound": "bin/install.js",
+    "fahhh-uninstall": "bin/uninstall.js"
   },
   "files": [
     "bin/",
