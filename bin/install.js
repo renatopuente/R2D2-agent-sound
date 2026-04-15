@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const os = require('os');
 
-// Si se llama como: npx @renatopuente/fahhh-agent-sound fahhh-uninstall
-if (process.argv[2] === 'fahhh-uninstall') {
+// Si se llama como: npx @renatopuente/r2d2-agent-sound r2d2-uninstall
+if (process.argv[2] === 'r2d2-uninstall') {
         require(path.join(__dirname, 'uninstall.js'));
         process.exit(0);
 }
